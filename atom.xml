@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunoat77.github.io/"/>
-  <updated>2019-05-02T03:21:24.933Z</updated>
+  <updated>2019-05-02T02:12:46.732Z</updated>
   <id>http://sunoat77.github.io/</id>
   
   <author>
@@ -15,24 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>jsp-九大隐式对象</title>
-    <link href="http://sunoat77.github.io/2019/05/02/jsp-%E4%B9%9D%E5%A4%A7%E9%9A%90%E5%BC%8F%E5%AF%B9%E8%B1%A1/"/>
-    <id>http://sunoat77.github.io/2019/05/02/jsp-九大隐式对象/</id>
-    <published>2019-05-02T02:24:08.000Z</published>
-    <updated>2019-05-02T03:21:24.933Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jsp隐式对象的解读:</span><br></pre></td></tr></table></figure><a id="more"></a><p>九大隐式对象：<br>输入输出对象：out、request、response<br>作用域通信对象：session、application、pageContext<br>servlet对象：page、config<br>错误对象：exception<br>JSP 定义的作用域包括 page、request、session 和 application</p><hr><h3 id="在说隐式对象之前先说一下请求重定向和请求转发的区别"><a href="#在说隐式对象之前先说一下请求重定向和请求转发的区别" class="headerlink" title="在说隐式对象之前先说一下请求重定向和请求转发的区别"></a>在说隐式对象之前先说一下请求重定向和请求转发的区别</h3><p>先说定义：一个web资源收到客户端请求后，通知服务器去调用另外一个web资源进行处理(服务器内部的调用)，称之为请求转发<br>    一个web资源收到客户端请求后，通知浏览器去访问另外一个web资源（浏览器进行2次请求），称之为请求重定向<br>    区别：<br>    1.forward是服务器内部转发，而redirect是通过客户端进行转发<br>    2.如果用forward进行转发的话，客户端的url地址不会改变，但是如果用redirect的话，则url地址会改变<br>    3.如果用forward进行转发，转发页面和被转发页面处于一个request请求内，而redirect不是。</p><h3 id="输入输出对象："><a href="#输入输出对象：" class="headerlink" title="输入输出对象："></a>输入输出对象：</h3><p><strong>（1）request</strong>：<br>1.接受数据：request.getParameter();获取的是form表单提交的数据(一个参数名对应一个参数值)<br>String[ ] getParameterValues (String name);(一个参数名对应多个参数值)<br>2.设置页面请求数据编码（只适用于编码）<br>    &lt;%<br>     request.setCharacterEncoding(“UTF-8”); //放在getParameter前才有效<br>    %&gt;<br>    比如：用户的注册啥的<br>    补充：get、post都适用的情况：<br>    &lt;%=new String(request.getParameter(“bookName”).getBytes(“ISO-8859-1”),”UTF-8”) %&gt;<br>3.设置属性、取得属性和删除属性<br>    setAttribute  getAttribute  removeAttribute<br>    程序员根据业务逻辑的需求，设置属性值<br>request.getParameter()和request.getAttribute()的不同点：<br>    request.getParameter()可以看做：form表单提交的数据是写入到服务器的，<br>    request.getParameter()是从服务器中取值。<br>    request.getAttribute()：写入到同一个request对象中的。<br><strong>4.请求转发</strong><br>request对象提供了一个getRequestDispatcher方法，该方法返回一个RequestDispatcher对象，调用这个对象的forward方法可以实现请求转发，从而共享请求中的数据<br>这里的URL可以为相对路径,如果URL开始为“/”,则认为它是相对于当前WEB应用程序的根目录。<br>    &lt;%<br>     RequestDispatcher requestDispatcher= request.getRequestDispatcher (“URL”);<br>     requestDispatcher.forward(request,response);<br>    %&gt;<br><strong>请求转发的特点</strong><br>在请求转发的过程中，地址栏不发生变化，两个页面之间使用的是同一个request对象！<br><strong>5.获得session</strong><br>    &lt;%<br>      HttpSession mySession = request.getSession();<br>    %&gt;<br>    <strong>注意：</strong><br>补充1：设置页面请求数据编码（只适用post） ：<br>    &lt;%<br>     request.setCharacterEncoding(“UTF-8”); //放在getParameter前才有效<br>    %&gt;<br><strong>（2）response对象</strong><br>常用方法<br>1.void sendRedirect (String name)<br>          发送一个响应给浏览器，指示其请求另一个URL<br>    //设置属性<br>    session.setAttribute(“userName”, userName);<br>    //请求重定向  /响应转发 :地址栏发生了变化，两个页面之间使用的不是同一个request对象<br>    response.sendRedirect(“success.jsp”);//使用的是相对路径的情况</p><p>2.void setHeader(String name,String value)<br>        设置响应头信息<br>    out.print(“2秒后，刷新到成功界面！”);<br>    response.setHeader(“refresh”, “2;url=success.jsp”);</p><p>3.void setContentType (String name)<br>        设置作为响应生成的内容的类型和字符编码<br><strong>(3)out 对象</strong></p><pre><code>作用域通信对象</code></pre><p><strong>(4)session会话技术：服务器端</strong><br>    cookie技术：客户端<br><strong>(5)application</strong>：统计用户浏览网页的次数<br><strong>(6)pageContext</strong>：可以访问任何的隐式对象</p><p>servlert对象：<br><strong>(7)page</strong>：使用 page 对象可以访问 Servlet 类的所有变量和方法</p><p><strong>(8)config</strong>：存储在编译 JSP 页面的过程中创建的 Servlet 的信息<br>提供了检索 Servlet 初始化参数的方法</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;jsp隐式对象的解读:&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>关于数据库的链接-jdbc</title>

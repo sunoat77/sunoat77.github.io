@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunoat77.github.io/"/>
-  <updated>2019-05-02T00:51:28.655Z</updated>
+  <updated>2019-05-02T02:03:06.886Z</updated>
   <id>http://sunoat77.github.io/</id>
   
   <author>
@@ -17,20 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>关于数据库的链接-jdbc</title>
+    <link href="http://sunoat77.github.io/2019/05/02/%E5%85%B3%E4%BA%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%93%BE%E6%8E%A5-jdbc/"/>
+    <id>http://sunoat77.github.io/2019/05/02/关于数据库的链接-jdbc/</id>
+    <published>2019-05-02T01:18:22.000Z</published>
+    <updated>2019-05-02T02:03:06.886Z</updated>
+    
+    <content type="html"><![CDATA[<p>在java中，数据库存取技术可分为如下几类：<br><a id="more"></a></p><ul><li>JDBC直接访问数据库</li><li>第三方O/R工具，如Mybatis等<br>JDBC是java访问数据库的基石。<br>#1、什么是JDBC<br>JDBC是一个独立于特定数据库管理系统/通用的Sql数据库存取和操作的公共接口，定义了用来访问数据库的标准java类库，使用这个类可以以一种标准的方法、方便的访问数据库资源。<br>接下来，我们以mysql为例：<br>通过java连接mysql数据库的步骤<br>1.将mysql的驱动包导入到项目中<br>![连接数据库的jar包]（<a href="https://s2.ax1x.com/2019/05/02/EYONut.png）" target="_blank" rel="noopener">https://s2.ax1x.com/2019/05/02/EYONut.png）</a><br>2.创建一个Class文件，名为DBUtils<br>首先加载数据库驱动Class.forName(“com.mysql.jdbc.Driver”);<br>3.获取连接DriverManager.getConnection(url,user,password);<br>url:com.mysql:localhost:3306/mysqls?characterEncoding=utf=8<br>user:你的数据库名<br>password：你的数据库密码<br>4.创建处理对象：获取连接对象.createStatement();<br><img src="https://s2.ax1x.com/2019/05/02/EYXirt.png" alt="连接数据库"><br>5.编写sql语句<br>6.执行sql语句：<br>statement.executeQuery(sql);//查询<br>statementexecuteUpdate(sql);//增，删，改<br>7.关闭流<br>获取连接对象.close<br><img src="https://s2.ax1x.com/2019/05/02/EYXPKI.png" alt="关流"></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在java中，数据库存取技术可分为如下几类：&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>测试版</title>
     <link href="http://sunoat77.github.io/2019/04/28/%E6%B5%8B%E8%AF%95%E7%89%88/"/>
     <id>http://sunoat77.github.io/2019/04/28/测试版/</id>
     <published>2019-04-28T13:51:17.000Z</published>
-    <updated>2019-05-02T00:51:28.655Z</updated>
+    <updated>2019-05-02T02:04:51.124Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="来自一个程序员的博客"><a href="#来自一个程序员的博客" class="headerlink" title="来自一个程序员的博客"></a>来自一个程序员的博客</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p><a href="http://baidu.com" target="_blank" rel="noopener">百度一下</a></p><ul><li>列表内容</li><li>列表内容1</li><li>列表内容2</li><li>列表内容3  </li></ul><table><thead><tr><th>姓名</th><th>技能</th><th>排行</th></tr></thead><tbody><tr><td>刘备</td><td>哭</td><td>大哥</td></tr><tr><td>关于</td><td>打</td><td>二哥</td></tr><tr><td>张飞</td><td>骂</td><td>三哥  </td></tr></tbody></table><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public void static main(String[] args)&#123;</span><br><span class="line">system.out.println(&quot;这是我的第一个博客&quot;);</span><br><span class="line">&#125;</span><br><span class="line">alert(&apos;hello world&apos;);</span><br></pre></td></tr></table></figure><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><pre><code>&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;table border=&quot;1&quot; ellspacing=&quot;0&quot; cellpadding=&quot;5&quot;&gt;    &lt;caption&gt;成绩单&lt;/caption&gt;    &lt;tr&gt;        &lt;td&gt;姓名&lt;/td&gt;        &lt;td&gt;性别&lt;/td&gt;        &lt;td&gt;成绩&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;td&gt;张三&lt;/td&gt;        &lt;td&gt;男&lt;/td&gt;        &lt;td&gt;89&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;td&gt;李四&lt;/td&gt;        &lt;td&gt;男&lt;/td&gt;        &lt;td&gt;88&lt;/td&gt;    &lt;/tr&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><p><img src="https://s2.ax1x.com/2019/04/29/E3rTfI.jpg" alt="hello world"></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.<br><a id="more"></a></p><h1 id="来自一个程序员的博客"><a href="#来自一个程序员的博客" class="headerlink" title="来自一个程序员的博客"></a>来自一个程序员的博客</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p><a href="http://baidu.com" target="_blank" rel="noopener">百度一下</a></p><ul><li>列表内容</li><li>列表内容1</li><li>列表内容2</li><li>列表内容3  </li></ul><table><thead><tr><th>姓名</th><th>技能</th><th>排行</th></tr></thead><tbody><tr><td>刘备</td><td>哭</td><td>大哥</td></tr><tr><td>关于</td><td>打</td><td>二哥</td></tr><tr><td>张飞</td><td>骂</td><td>三哥  </td></tr></tbody></table><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public void static main(String[] args)&#123;</span><br><span class="line">system.out.println(&quot;这是我的第一个博客&quot;);</span><br><span class="line">&#125;</span><br><span class="line">alert(&apos;hello world&apos;);</span><br></pre></td></tr></table></figure><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><pre><code>&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;table border=&quot;1&quot; ellspacing=&quot;0&quot; cellpadding=&quot;5&quot;&gt;    &lt;caption&gt;成绩单&lt;/caption&gt;    &lt;tr&gt;        &lt;td&gt;姓名&lt;/td&gt;        &lt;td&gt;性别&lt;/td&gt;        &lt;td&gt;成绩&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;td&gt;张三&lt;/td&gt;        &lt;td&gt;男&lt;/td&gt;        &lt;td&gt;89&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;td&gt;李四&lt;/td&gt;        &lt;td&gt;男&lt;/td&gt;        &lt;td&gt;88&lt;/td&gt;    &lt;/tr&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><p><img src="https://s2.ax1x.com/2019/04/29/E3rTfI.jpg" alt="hello world"></p><p>##第三章<br><img src="https://s2.ax1x.com/2019/04/29/E3rTfI.jpg" alt="天气"></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;来自一个程序员的博客&quot;&gt;&lt;a href=&quot;#来自一个程序员的博客&quot; class=&quot;headerlink&quot; title=&quot;来自一个程序员的博客&quot;&gt;&lt;/a&gt;来自一个程序员的博客&lt;/h1&gt;&lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;header
-      
+      &lt;p&gt;Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.&lt;br&gt;
     
     </summary>
     

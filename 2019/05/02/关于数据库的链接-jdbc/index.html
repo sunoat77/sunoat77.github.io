@@ -110,13 +110,14 @@
 <meta property="og:site_name" content="程序猫">
 <meta property="og:description" content="在java中，数据库存取技术可分为如下几类：">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://s2.ax1x.com/2019/05/02/EYONut.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/05/02/EYXirt.png">
 <meta property="og:image" content="https://s2.ax1x.com/2019/05/02/EYXPKI.png">
-<meta property="og:updated_time" content="2019-05-02T02:03:06.886Z">
+<meta property="og:updated_time" content="2019-05-02T02:12:46.732Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于数据库的链接-jdbc">
 <meta name="twitter:description" content="在java中，数据库存取技术可分为如下几类：">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/05/02/EYXirt.png">
+<meta name="twitter:image" content="https://s2.ax1x.com/2019/05/02/EYONut.png">
 
 
 
@@ -382,7 +383,7 @@
                 
               
 
-              <time title="创建时间：2019-05-02 09:18:22 / 修改时间：10:03:06" itemprop="dateCreated datePublished" datetime="2019-05-02T09:18:22+08:00">2019-05-02</time>
+              <time title="创建时间：2019-05-02 09:18:22 / 修改时间：10:12:46" itemprop="dateCreated datePublished" datetime="2019-05-02T09:18:22+08:00">2019-05-02</time>
             
 
             
@@ -415,7 +416,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">626</span>
+                <span title="本文字数">569</span>
               
 
               
@@ -452,7 +453,7 @@
         <p>在java中，数据库存取技术可分为如下几类：<br><a id="more"></a></p>
 <ul>
 <li>JDBC直接访问数据库</li>
-<li>第三方O/R工具，如Mybatis等<br>JDBC是java访问数据库的基石。<br>#1、什么是JDBC<br>JDBC是一个独立于特定数据库管理系统/通用的Sql数据库存取和操作的公共接口，定义了用来访问数据库的标准java类库，使用这个类可以以一种标准的方法、方便的访问数据库资源。<br>接下来，我们以mysql为例：<br>通过java连接mysql数据库的步骤<br>1.将mysql的驱动包导入到项目中<br>![连接数据库的jar包]（<a href="https://s2.ax1x.com/2019/05/02/EYONut.png）" target="_blank" rel="noopener">https://s2.ax1x.com/2019/05/02/EYONut.png）</a><br>2.创建一个Class文件，名为DBUtils<br>首先加载数据库驱动Class.forName(“com.mysql.jdbc.Driver”);<br>3.获取连接DriverManager.getConnection(url,user,password);<br>url:com.mysql:localhost:3306/mysqls?characterEncoding=utf=8<br>user:你的数据库名<br>password：你的数据库密码<br>4.创建处理对象：获取连接对象.createStatement();<br><img src="https://s2.ax1x.com/2019/05/02/EYXirt.png" alt="连接数据库"><br>5.编写sql语句<br>6.执行sql语句：<br>statement.executeQuery(sql);//查询<br>statementexecuteUpdate(sql);//增，删，改<br>7.关闭流<br>获取连接对象.close<br><img src="https://s2.ax1x.com/2019/05/02/EYXPKI.png" alt="关流"></li>
+<li>第三方O/R工具，如Mybatis等<br>JDBC是java访问数据库的基石。<h1 id="1、什么是JDBC"><a href="#1、什么是JDBC" class="headerlink" title="1、什么是JDBC"></a>1、什么是JDBC</h1>JDBC是一个独立于特定数据库管理系统/通用的Sql数据库存取和操作的公共接口，定义了用来访问数据库的标准java类库，使用这个类可以以一种标准的方法、方便的访问数据库资源。<br>接下来，我们以mysql为例：<br>通过java连接mysql数据库的步骤<br>1.将mysql的驱动包导入到项目中<br><img src="https://s2.ax1x.com/2019/05/02/EYONut.png" alt="关流"><br>2.创建一个Class文件，名为DBUtils<br>首先加载数据库驱动Class.forName(“com.mysql.jdbc.Driver”);<br>3.获取连接DriverManager.getConnection(url,user,password);<br>url:com.mysql:localhost:3306/mysqls?characterEncoding=utf=8<br>user:你的数据库名<br>password：你的数据库密码<br>4.创建处理对象：获取连接对象.createStatement();<br><img src="https://s2.ax1x.com/2019/05/02/EYXirt.png" alt="连接数据库"><br>5.编写sql语句<br>6.执行sql语句：<br>statement.executeQuery(sql);//查询<br>statementexecuteUpdate(sql);//增，删，改<br>7.关闭流<br>获取连接对象.close<br><img src="https://s2.ax1x.com/2019/05/02/EYXPKI.png" alt="关流"></li>
 </ul>
 
       
@@ -569,8 +570,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -665,6 +675,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1、什么是JDBC"><span class="nav-number">1.</span> <span class="nav-text">1、什么是JDBC</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

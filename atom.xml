@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunoat77.github.io/"/>
-  <updated>2019-05-02T02:03:06.886Z</updated>
+  <updated>2019-05-02T02:12:46.732Z</updated>
   <id>http://sunoat77.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://sunoat77.github.io/2019/05/02/%E5%85%B3%E4%BA%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%93%BE%E6%8E%A5-jdbc/"/>
     <id>http://sunoat77.github.io/2019/05/02/关于数据库的链接-jdbc/</id>
     <published>2019-05-02T01:18:22.000Z</published>
-    <updated>2019-05-02T02:03:06.886Z</updated>
+    <updated>2019-05-02T02:12:46.732Z</updated>
     
-    <content type="html"><![CDATA[<p>在java中，数据库存取技术可分为如下几类：<br><a id="more"></a></p><ul><li>JDBC直接访问数据库</li><li>第三方O/R工具，如Mybatis等<br>JDBC是java访问数据库的基石。<br>#1、什么是JDBC<br>JDBC是一个独立于特定数据库管理系统/通用的Sql数据库存取和操作的公共接口，定义了用来访问数据库的标准java类库，使用这个类可以以一种标准的方法、方便的访问数据库资源。<br>接下来，我们以mysql为例：<br>通过java连接mysql数据库的步骤<br>1.将mysql的驱动包导入到项目中<br>![连接数据库的jar包]（<a href="https://s2.ax1x.com/2019/05/02/EYONut.png）" target="_blank" rel="noopener">https://s2.ax1x.com/2019/05/02/EYONut.png）</a><br>2.创建一个Class文件，名为DBUtils<br>首先加载数据库驱动Class.forName(“com.mysql.jdbc.Driver”);<br>3.获取连接DriverManager.getConnection(url,user,password);<br>url:com.mysql:localhost:3306/mysqls?characterEncoding=utf=8<br>user:你的数据库名<br>password：你的数据库密码<br>4.创建处理对象：获取连接对象.createStatement();<br><img src="https://s2.ax1x.com/2019/05/02/EYXirt.png" alt="连接数据库"><br>5.编写sql语句<br>6.执行sql语句：<br>statement.executeQuery(sql);//查询<br>statementexecuteUpdate(sql);//增，删，改<br>7.关闭流<br>获取连接对象.close<br><img src="https://s2.ax1x.com/2019/05/02/EYXPKI.png" alt="关流"></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>在java中，数据库存取技术可分为如下几类：<br><a id="more"></a></p><ul><li>JDBC直接访问数据库</li><li>第三方O/R工具，如Mybatis等<br>JDBC是java访问数据库的基石。<h1 id="1、什么是JDBC"><a href="#1、什么是JDBC" class="headerlink" title="1、什么是JDBC"></a>1、什么是JDBC</h1>JDBC是一个独立于特定数据库管理系统/通用的Sql数据库存取和操作的公共接口，定义了用来访问数据库的标准java类库，使用这个类可以以一种标准的方法、方便的访问数据库资源。<br>接下来，我们以mysql为例：<br>通过java连接mysql数据库的步骤<br>1.将mysql的驱动包导入到项目中<br><img src="https://s2.ax1x.com/2019/05/02/EYONut.png" alt="关流"><br>2.创建一个Class文件，名为DBUtils<br>首先加载数据库驱动Class.forName(“com.mysql.jdbc.Driver”);<br>3.获取连接DriverManager.getConnection(url,user,password);<br>url:com.mysql:localhost:3306/mysqls?characterEncoding=utf=8<br>user:你的数据库名<br>password：你的数据库密码<br>4.创建处理对象：获取连接对象.createStatement();<br><img src="https://s2.ax1x.com/2019/05/02/EYXirt.png" alt="连接数据库"><br>5.编写sql语句<br>6.执行sql语句：<br>statement.executeQuery(sql);//查询<br>statementexecuteUpdate(sql);//增，删，改<br>7.关闭流<br>获取连接对象.close<br><img src="https://s2.ax1x.com/2019/05/02/EYXPKI.png" alt="关流"></li></ul>]]></content>
     
     <summary type="html">
     

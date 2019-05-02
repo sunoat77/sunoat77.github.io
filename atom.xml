@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunoat77.github.io/"/>
-  <updated>2019-04-29T12:33:05.235Z</updated>
+  <updated>2019-05-02T00:51:28.655Z</updated>
   <id>http://sunoat77.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的第二个博客</title>
-    <link href="http://sunoat77.github.io/2019/04/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%BA%8C%E4%B8%AA%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://sunoat77.github.io/2019/04/28/我的第二个博客/</id>
+    <title>测试版</title>
+    <link href="http://sunoat77.github.io/2019/04/28/%E6%B5%8B%E8%AF%95%E7%89%88/"/>
+    <id>http://sunoat77.github.io/2019/04/28/测试版/</id>
     <published>2019-04-28T13:51:17.000Z</published>
-    <updated>2019-04-29T12:33:05.235Z</updated>
+    <updated>2019-05-02T00:51:28.655Z</updated>
     
     <content type="html"><![CDATA[<h1 id="来自一个程序员的博客"><a href="#来自一个程序员的博客" class="headerlink" title="来自一个程序员的博客"></a>来自一个程序员的博客</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p><a href="http://baidu.com" target="_blank" rel="noopener">百度一下</a></p><ul><li>列表内容</li><li>列表内容1</li><li>列表内容2</li><li>列表内容3  </li></ul><table><thead><tr><th>姓名</th><th>技能</th><th>排行</th></tr></thead><tbody><tr><td>刘备</td><td>哭</td><td>大哥</td></tr><tr><td>关于</td><td>打</td><td>二哥</td></tr><tr><td>张飞</td><td>骂</td><td>三哥  </td></tr></tbody></table><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public void static main(String[] args)&#123;</span><br><span class="line">system.out.println(&quot;这是我的第一个博客&quot;);</span><br><span class="line">&#125;</span><br><span class="line">alert(&apos;hello world&apos;);</span><br></pre></td></tr></table></figure><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><pre><code>&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;    &lt;meta charset=&quot;UTF-8&quot;&gt;    &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;&lt;body&gt;    &lt;table border=&quot;1&quot; ellspacing=&quot;0&quot; cellpadding=&quot;5&quot;&gt;    &lt;caption&gt;成绩单&lt;/caption&gt;    &lt;tr&gt;        &lt;td&gt;姓名&lt;/td&gt;        &lt;td&gt;性别&lt;/td&gt;        &lt;td&gt;成绩&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;td&gt;张三&lt;/td&gt;        &lt;td&gt;男&lt;/td&gt;        &lt;td&gt;89&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;td&gt;李四&lt;/td&gt;        &lt;td&gt;男&lt;/td&gt;        &lt;td&gt;88&lt;/td&gt;    &lt;/tr&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><p><img src="https://s2.ax1x.com/2019/04/29/E3rTfI.jpg" alt="hello world"></p>]]></content>
     
@@ -30,29 +30,6 @@
       
       
         &lt;h1 id=&quot;来自一个程序员的博客&quot;&gt;&lt;a href=&quot;#来自一个程序员的博客&quot; class=&quot;headerlink&quot; title=&quot;来自一个程序员的博客&quot;&gt;&lt;/a&gt;来自一个程序员的博客&lt;/h1&gt;&lt;h2 id=&quot;第一章&quot;&gt;&lt;a href=&quot;#第一章&quot; class=&quot;header
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>博客名字</title>
-    <link href="http://sunoat77.github.io/2019/04/28/%E5%8D%9A%E5%AE%A2%E5%90%8D%E5%AD%97/"/>
-    <id>http://sunoat77.github.io/2019/04/28/博客名字/</id>
-    <published>2019-04-28T08:49:32.000Z</published>
-    <updated>2019-04-29T11:43:28.755Z</updated>
-    
-    <content type="html"><![CDATA[<p>JavaEE企业级应用开发教程（spring+springMVC+mybatis）</p><p>这个是Typora写的文档，这个属于测试版<img src alt></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;JavaEE企业级应用开发教程（spring+springMVC+mybatis）&lt;/p&gt;
-&lt;p&gt;这个是Typora写的文档，这个属于测试版&lt;img src alt&gt;&lt;/p&gt;
-
       
     
     </summary>

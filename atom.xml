@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunoat77.github.io/"/>
-  <updated>2019-05-02T03:41:49.092Z</updated>
+  <updated>2019-05-05T08:04:12.682Z</updated>
   <id>http://sunoat77.github.io/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JSP入门</title>
+    <link href="http://sunoat77.github.io/2019/05/05/JSP%E5%85%A5%E9%97%A8/"/>
+    <id>http://sunoat77.github.io/2019/05/05/JSP入门/</id>
+    <published>2019-05-05T07:54:24.000Z</published>
+    <updated>2019-05-05T08:04:12.682Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JSP运行原理、脚本元素、指令、动作</span><br></pre></td></tr></table></figure><a id="more"></a><p><strong>1.JSP的执行过程</strong>：客户端发出Request（请求）;Tomcat服务器将JSP转译成Servlet的源代码（.java）;将产生的Servlet源代码经过编译后（.class）,并加到内存执行；把结果Response（响应）至客户端。<br><strong>2.JSP脚本元素</strong>：Scriptlet：&lt;% Java代码 %&gt;:声明的变量是局部变量，<br>    作用域是当前的整个Web应用程序，不可以被多线程共享的<br>    声明：&lt;%!  %&gt;：声明的变量是全局变量，可以被多个线程共享的<br>    表达式:&lt;%=  %&gt; :计算和显示数据<br><strong>3.JSP的指令</strong>：&lt;%@ page 属性1=”属性值1”  属性2=”属性值2” %&gt;<br>page<br>include：<br>    指令特点：<br>    这种称为静态包含（在编译之前已经做了处理）—-先将要包含的jsp代码嵌入到相应的jsp页面，然后再统一转换成一个servlet类。<br>    这种包含不能传参数<br>    包含页面和被包含页面访问的是同一个request内嵌对象。</p><p>taglib<br><strong>4.JSP的动作</strong>：&lt;jsp:动作名     /&gt;或 &lt;jsp:动作名  &gt;&lt;/jsp:动作名&gt;<br>include：<br>    动作特点：<br>    是动态包含，在运行期间进行嵌套，生成多个servlet类；<br>    包含和被包含的jsp访问的虽然不是同一个request内嵌对象，但是被包含的jsp文件可以访问包含jsp文件能够访问的参数；<br>    可以传参数；</p><p>param：</p><p>forward:</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;JSP运行原理、脚本元素、指令、动作&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>jsp-九大隐式对象</title>

@@ -103,17 +103,17 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Hello">
+  <meta name="description" content="1JDBC登陆案例并理解避免SQL注入">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://sunoat77.github.io/2019/04/28/hello-world/index.html">
+<meta property="og:title" content="关于数据库、事物深入刨析_jsp笔记">
+<meta property="og:url" content="http://sunoat77.github.io/2019/05/05/关于数据库、事物深入刨析-jsp笔记/index.html">
 <meta property="og:site_name" content="程序猫">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Hello">
+<meta property="og:description" content="1JDBC登陆案例并理解避免SQL注入">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-28T07:07:40.689Z">
+<meta property="og:updated_time" content="2019-05-05T08:27:23.605Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Hello">
+<meta name="twitter:title" content="关于数据库、事物深入刨析_jsp笔记">
+<meta name="twitter:description" content="1JDBC登陆案例并理解避免SQL注入">
 
 
 
@@ -123,7 +123,7 @@
 
   
   
-  <link rel="canonical" href="http://sunoat77.github.io/2019/04/28/hello-world/">
+  <link rel="canonical" href="http://sunoat77.github.io/2019/05/05/关于数据库、事物深入刨析-jsp笔记/">
 
 
 
@@ -133,7 +133,7 @@
   };
 </script>
 
-  <title>Hello World | 程序猫</title>
+  <title>关于数据库、事物深入刨析_jsp笔记 | 程序猫</title>
   
 
 
@@ -336,7 +336,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sunoat77.github.io/2019/04/28/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://sunoat77.github.io/2019/05/05/关于数据库、事物深入刨析-jsp笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="codeCat">
@@ -353,7 +353,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">关于数据库、事物深入刨析_jsp笔记
 
               
             
@@ -379,7 +379,7 @@
                 
               
 
-              <time title="创建时间：2019-04-28 14:47:56 / 修改时间：15:07:40" itemprop="dateCreated datePublished" datetime="2019-04-28T14:47:56+08:00">2019-04-28</time>
+              <time title="创建时间：2019-05-05 16:12:08 / 修改时间：16:27:23" itemprop="dateCreated datePublished" datetime="2019-05-05T16:12:08+08:00">2019-05-05</time>
             
 
             
@@ -412,7 +412,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">440</span>
+                <span title="本文字数">3.6k</span>
               
 
               
@@ -426,7 +426,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">3 分钟</span>
               
             </div>
           
@@ -446,15 +446,35 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">JDBC登陆案例并理解避免SQL注入</span><br></pre></td></tr></table></figure>
+<hr>
+<a id="more"></a>
+<p><code>以下为创建数据库的课堂笔记（仅供参考）</code><br>创建普通用户：<br>sqlplus</p>
+<p>system oracle</p>
+<p>创建新用户：<br>create  user c##scott identified by tiger;</p>
+<p>然后是解锁用户和各种授权<br>为刚创建的用户授权：<br>alter user c##用户名 account unlock;<br>授予新用户创建权限<br>grant create session to  c##用户名 ;<br>授予新用户数据库管理员权限：<br>grant dba to c##用户名;</p>
+<p>授予用户其他权限：(需要再次进行测试)<br>GRANT CREATE USER,DROP USER,ALTER USER ,</p>
+<pre><code>CREATE  ANY  VIEW , DROP ANY VIEW,
+
+EXP_FULL_DATABASE,IMP_FULL_DATABASE, 
+
+DBA,CONNECT,RESOURCE,CREATE SESSION  TO  c##scott; 
+</code></pre><hr>
+<p>##一、连接数据库的步骤：首先在项目中加入ojdbc7.jar<br><strong> 1.加载驱动</strong><br>Class.forName(“oracle.jdbc.driver.OracleDriver”);<br><strong>2.建立连接</strong><br>Connection conn=DriverManager.getConnection(“jdbc:oracle:thin:@localhost:1521:orcl”,”system”,”oracle”);<br><strong>3.发生sql文(查询)</strong><br> Statement st=  conn.createStatement();<br>           String sql=””;<br>        ResultSet rs= st.executeQuery(sql);<br><strong> 4.处理结果集</strong><br> while(rs.next()){</p>
+<pre><code>    System.out.print(rs.getInt(1)+re.getString(2));
+}
+</code></pre><p><strong>  5.释放资源</strong><br> finally{<br>        if(rs!=null){<br>            rs.close();<br>        }<br>        if(st!=null){<br>            st.close();<br>        }<br>        if(conn!=null){<br>            conn.close();<br>        }</p>
+<pre><code>}      
+</code></pre><p>##二、理解SQL注入：Statement<br>String sql = “select * from user where username= ‘“+varname+”‘ and userpwd=’”+varpasswd+”‘“;<br>• stmt = conn.createStatement();<br>• rs = stmt.executeUpdate(sql);  </p>
+<p>这是验证用户名密码的，对吧。但要是我们把’or ‘1’ = 1’当作密码传进去，<br>                                                              1234wwqq<br>• select * from user where username = ‘user’ and userpwd = ‘’ or ‘1’ = ‘1’;  </p>
+<p>这是个永真式，因为1永远等于1。所以不管怎样都能获取到权限。哇。这就坏咯！这还不是最坏的，你再看！ </p>
+<p>• String sql = “select * from user where username= ‘“+varname+”‘ and userpwd=’”+varpasswd+”‘“;<br>• stmt = conn.createStatement();<br>• rs = stmt.executeUpdate(sql);<br> 把’or ‘1’ = 1’;drop table book;当成密码传进去。这次直接把表给删了。</p>
+<p>##三、PrepareStatement与statement的区别：<br>PrepareStatement优点：<br>(1)PreperedStatement可以避免SQL注入的问题。<br>(2)Statement会使数据库频繁编译SQL，可能造成数据库缓冲区溢出。<br>PreparedStatement 可对SQL进行预编译，从而提高数据库的执行效率。<br>(3)作为 Statement 的子类，<br>PreparedStatement 继承了 Statement 的所有功能。<br>另外它还添加了一整套方法，用于设置发送给数据库以取代 IN 参数占位符的值。<br>同时，三种方法 execute、 executeQuery 和 executeUpdate 已被更改以使之不再需要参数。<br>这些方法的 Statement 形式（接受 SQL 语句参数的形式）不应该用于 PreparedStatement 对象。 </p>
+<p>##四、登录案例：<br>  JSP+JavaBean：实现了页面展现与业务逻辑处理的分离<br>  登录案例：<br>登录页面 login.jsp<br>校验界面validate.jsp——————》loginDao.java——————》连接数据库，<br>如果登录成功，跳转到成功界面，如果失败，跳转回登录界面</p>
+<p>##五、事物<br>事务：事务的概念：/Jsp_Demo06/src/com/inspur/test/TransactionDemo.java<br>事务指逻辑上的一组操作，组成这组操作的各个单元，要不全部成功，要不全部不成功。<br>特点：<br>原子性（Atomicity）<br>原子性是指事务是一个不可分割的工作单位，事务中的操作要么都发生，要么都不发生。<br>一致性（Consistency）<br>事务前后数据的完整性必须保持一致<br>隔离性（Isolation）<br>事务的隔离性是指多个用户并发访问数据库时，一个用户的事务不能被其它用户的事务所干扰，多个并发事务之间数据要相互隔离。<br>持久性（Durability）<br>持久性是指一个事务一旦被提交，它对数据库中数据的改变就是永久性的，接下来即使数据库发生故障也不应该对其有任何影响。</p>
+<p>##六、连接池<br>数据库连接池：<br>数据库连接池负责分配、管理和释放数据库连接，<br>它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个；<br>释放空闲时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏。<br>这项技术能明显提高对数据库操作的性能。</p>
+<p>连接池基本的思想是在系统初始化的时候，将数据库连接作为对象存储在内存中，<br>当用户需要访问数据库时，并非建立一个新的连接，而是从连接池中取出一个已建立的空闲连接对象。<br>使用完毕后，用户也并非将连接关闭，而是将连接放回连接池中，以供下一个请求访问使用。<br>而连接的建立、断开都由连接池自身来管理。<br>同时，还可以通过设置连接池的参数来控制连接池中的初始连接数、<br>连接的上下限数以及每个连接的最大使用次数、最大空闲时间等等。<br>也可以通过其自身的管理机制来监视数据库连接的数量、使用情况等<br>数据库连接池：<br>1、在tomcat的lib文件夹下面放置jar包ojdbc7.jar<br>2、在tomcat的server.xml配置文件中配置数据库连接池信息<br>JNDI技术：为开发人员提供查找或者访问java命名和目录的一种通用接口<br>3、修改ConnectionUtils.java文件<br>4、启动tomcat服务器<br>5、用户发出请求</p>
+<p>在tomcat的server.xml配置文件中配置数据库连接池信息：<br>    <context path="/Demo_JSP06" docbase="E:\workspace1\Demo_JSP06\WebRoot" reloadable="true"><br>        &lt;Resource<br>            name=”oracle”    //JNDI的名称<br>            auth=”Container”  //容器<br>            type=”javax.sql.DataSource” //数据源<br>            driverClassName=”oracle.jdbc.driver.OracleDriver”//数据库驱动<br>            url=”jdbc:oracle:thin:@localhost:1521:oracle2”//连接数据库的地址<br>            username=”scott” //数据库的普通用户名<br>            password=”tiger”    //数据库的密码<br>            maxActive=”1000”   //处于最大数量的连接数据库对象的值:Connection<br>            maxIndle=”20”      //空闲状态下的连接数据库 对象(Connetcion)的值<br>            maxWait=”10000”    //等待的时间<br>        /&gt;<br>    </context></p>
 
       
     </div>
@@ -518,15 +538,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/05/05/JSP入门/" rel="next" title="JSP入门">
+                <i class="fa fa-chevron-left"></i> JSP入门
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/28/测试版/" rel="prev" title="测试版">
-                测试版 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -570,17 +590,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -678,23 +689,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hello-Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hello Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">2.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">2.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">2.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">2.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">2.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       

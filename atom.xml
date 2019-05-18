@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sunoat77.github.io/"/>
-  <updated>2019-05-18T05:15:01.577Z</updated>
+  <updated>2019-05-18T06:37:04.200Z</updated>
   <id>http://sunoat77.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring基本应用</title>
+    <link href="http://sunoat77.github.io/2019/05/18/Spring%E5%9F%BA%E6%9C%AC%E5%BA%94%E7%94%A8/"/>
+    <id>http://sunoat77.github.io/2019/05/18/Spring基本应用/</id>
+    <published>2019-05-18T05:28:36.000Z</published>
+    <updated>2019-05-18T06:37:04.200Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>Spring是当前主流的Java Web开发框架，对一个java开发者来说，掌握Spring框架的使用，已是必备的技能之一，首先说下什么是Spring...</code><br><a id="more"></a></p><h1 id="1-Spring概述"><a href="#1-Spring概述" class="headerlink" title="1.Spring概述"></a>1.Spring概述</h1><h2 id="1-1什么是Spring"><a href="#1-1什么是Spring" class="headerlink" title="1.1什么是Spring"></a>1.1什么是Spring</h2><pre><code>Spring是一个轻量级的开源框架，它由IoC（控制反转）和AOP（面向切面编程）oop面向对象为内核，使用基本的javaBean来完成以前只可能由EJB完成的工作</code></pre><h2 id="1-2Spring框架的优点"><a href="#1-2Spring框架的优点" class="headerlink" title="1.2Spring框架的优点"></a>1.2Spring框架的优点</h2><pre><code>Spring具有简单，可测试和松耦合等特点，从这个角度出发，Spring不仅可以用于服务端开发，也可以应用于任何java应用的开发中，关于Spring框架的优点总结：</code></pre><p><em>非侵入式设计</em><br>    Spring是一种非侵入式框架，他可以使用应用程序代码对框架的依赖最小化<br><em>方便解耦，简化开发</em><br>    Spring就是一个大工厂，可以将所有对象的创建和依赖关系的维护工作都交给Spring容器管理，大大降低了组件之间的耦合性。<br><em>支持AOP</em><br>    Spring提供了对AOP的支持，它允许将一些通用任务，如安全，事务，日志等进行集中式处理，从而提高了程序的复用性<br><em>支持声明式事务处理</em><br>    只需要通过配置就可以完成对事务的管理，从而无需动手编程<br><em>方便程序的测试</em><br>    Spring提供了对Junit4的支持，可以通过注解方便的测试Spring程序<br><em>方便集成各种优秀的框架</em><br>    Spring不排斥各种优秀的开源框架，其内部提供了对各种优秀框架（Struts，Hibernate，Mybatis）的直接支持</p><h2 id="1-3Spring的下载以及目录结构"><a href="#1-3Spring的下载以及目录结构" class="headerlink" title="1.3Spring的下载以及目录结构"></a>1.3Spring的下载以及目录结构</h2><pre><code>Spring下载目录  http://repo.spring.io/release/org/springframework/spring/![图1-2docs](https://s2.ax1x.com/2019/05/18/EO8God.png)在图1-2中文件目录包含docs文件夹包含Spring的API文档和开发规范；libs文件夹包含开发需要的JAR包和源码，schema文件夹包含开发所需要的schema文件，这些文件中定义了Spring相关配置文件的约束。![图1-3lib目录](https://s2.ax1x.com/2019/05/18/EO8WlV.png)从图1-3中可以看到libs目录中的jar文件分3类，其中以RELEASE.jar结尾的是Spring框架class文件的JAR包；以REALSE-javadoc.jar结尾的是Spring框架API文档的压缩包；以REALSE-sources.jar结尾的是Spring框架源文件的压缩包。在libs目录中有4个基础包</code></pre><p><em>spring-core-4.3.6.REALSE.jar</em>：包含Spring框架基本的核心工具类，Spring其他组件都要用到这个包里的类，是其他组件的基本核心。<br><em>spring-beans-4.3.6.RELASE.jar</em>：所有应用都要用到的JAR包，它包含访问配置文件，创建和管理Bean以及进行Inversion of Control（IoC）或者<br><em>Dependency Injection（DI）</em>操作相关的所有类。<br><em>spring-context-4.3.6.REALSE.jar</em>：Spring提供了在基础IoC功能上的扩展服务，还提供了许多企业级服务器的支持，如邮件，任务调度，JNDI定位，EJB集成，远程访问，缓存以及各种视图层框架的封装。<br><em>spring-expression-4.3.6.REALSE.jar</em>：定义Spring表达式语言<br>                除此之外：<br>                    在使用Spring开发，Spring的核心容器还需要依赖commons.logging的JAR包，该jar包可以通过<br>                    <a href="http://commons.apache.org/proper/commons-logging/download_logging.cgi" target="_blank" rel="noopener">http://commons.apache.org/proper/commons-logging/download_logging.cgi</a>   </p><h1 id="2-Spring的核心容器"><a href="#2-Spring的核心容器" class="headerlink" title="2.Spring的核心容器"></a>2.Spring的核心容器</h1><h2 id="2-1-Srping框架主要功能是通过Spring核心容器来实现的，SPringle提供了两种核心容器，分别为BeanFactory和ApplicationContext。Applicationcontext常用。"><a href="#2-1-Srping框架主要功能是通过Spring核心容器来实现的，SPringle提供了两种核心容器，分别为BeanFactory和ApplicationContext。Applicationcontext常用。" class="headerlink" title="2.1 Srping框架主要功能是通过Spring核心容器来实现的，SPringle提供了两种核心容器，分别为BeanFactory和ApplicationContext。Applicationcontext常用。"></a>2.1 Srping框架主要功能是通过Spring核心容器来实现的，SPringle提供了两种核心容器，分别为<em>BeanFactory</em>和ApplicationContext。Applicationcontext常用。</h2><h2 id="2-2BeanFactory"><a href="#2-2BeanFactory" class="headerlink" title="2.2BeanFactory"></a>2.2BeanFactory</h2><pre><code>    BeanFactory是一个管理Bean的工厂，它主要负责初始化各种Bean，并调用他们的生命周期的方法。     创建BeanFactory实例，需要提供Spring 所管理容器的详细配置信息，这些信息通常采用XML文件形式来管理，加载配置信息的语法如下：     BeanFactory beanFactory =  new XMLBeanFactory(new FileSystemResource(&quot;D:/applicationContext.xml&quot;);     这种加载方式在开发中并不常用，读者了解即可。** 2.2.1ApplicationContext**     ApplicationContext是BeanFactory的子接口，也被称为应用上下文，是Spring常用的核心容器。它包含了BeanFactory所有功能，还添加了国际化，资源访问，事件传播支持。     创建ApplicationContext接口实例，通常采用两种方法， 通过ClassPathXmlApplicationContext创建             ClassPathXmlApplicationContext会从路径classPath中寻找指定的XML配置文件，找到并装载完成ApplicationContext的实例化工作             语法格式：             ApplicationContext applicationContext= new ClassPathXmlApplicationContext（String configLocation);             上述代码，configLocation参数用于指定Spring配置文件的名称和位置。如果值为“applicationContext.xml”，则Spring回去类路径中查找名为applicationContext.xml的配置文件。通过FileSystemXMLApplicationContext创建             FileSystemXMLApplicationContext会从指定的文件系统路径（绝对路径）中寻找指定的XML配置文件，找到并装在完成ApplicationContext的实例化工作             语法格式：             ApplicationContext applicationContext = new FileSystemXmlApplicationContext(String configLocation);</code></pre><h1 id="3依赖注入的实现方式"><a href="#3依赖注入的实现方式" class="headerlink" title="3依赖注入的实现方式"></a>3依赖注入的实现方式</h1><pre><code>依赖注入的作用就是在使用Spring框架创建对象时，动态的将其所依赖的对象注入Bean组件中，其实现方式通常有两种，一种是setter方法注入，另一种是构造方法注入，*setter注入*：指Spring容器使用setter方法注入被依赖的实例。通过调用无参构造方法或者无参静态工厂方法实例化Bean后，调用该Bean的setter方法，可以实现基于setter方法的依赖注入*构造方法注入*：指Spring容器使用构造方法注入被依赖的实例，基于构造方法的依赖注入通过调用带参数的构造方法来实现，每个参数代表着一个依赖</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;Spring是当前主流的Java Web开发框架，对一个java开发者来说，掌握Spring框架的使用，已是必备的技能之一，首先说下什么是Spring...&lt;/code&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Spring" scheme="http://sunoat77.github.io/tags/Spring/"/>
+    
+  </entry>
   
   <entry>
     <title>全民目击---观后感</title>

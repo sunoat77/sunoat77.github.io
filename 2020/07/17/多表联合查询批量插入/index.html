@@ -103,19 +103,18 @@
 
 
 
-  <meta name="description" content="来自一个程序员的博客第一章百度一下  列表内容 列表内容1 列表内容2 列表内容3       姓名 技能 排行     刘备 哭 大哥   关于 打 二哥   张飞 骂 三哥      1234public void static main(String[] args)&amp;#123;	system.out.println(&amp;quot;这是我的第一个博客&amp;quot;);&amp;#125;alert(&amp;ap">
+  <meta name="description" content="当多张表A,B的数据需要汇总到一张表C的时候，并且数据量很大的时候，是一件很麻烦的事...">
+<meta name="keywords" content="Oracle">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第二个博客">
-<meta property="og:url" content="http://sunoat77.github.io/2019/04/28/我的第二个博客/index.html">
+<meta property="og:title" content="多表联合查询批量插入">
+<meta property="og:url" content="http://sunoat77.github.io/2020/07/17/多表联合查询批量插入/index.html">
 <meta property="og:site_name" content="程序猫">
-<meta property="og:description" content="来自一个程序员的博客第一章百度一下  列表内容 列表内容1 列表内容2 列表内容3       姓名 技能 排行     刘备 哭 大哥   关于 打 二哥   张飞 骂 三哥      1234public void static main(String[] args)&amp;#123;	system.out.println(&amp;quot;这是我的第一个博客&amp;quot;);&amp;#125;alert(&amp;ap">
+<meta property="og:description" content="当多张表A,B的数据需要汇总到一张表C的时候，并且数据量很大的时候，是一件很麻烦的事...">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://s2.ax1x.com/2019/04/29/E3rTfI.jpg">
-<meta property="og:updated_time" content="2019-04-29T12:33:05.235Z">
+<meta property="og:updated_time" content="2020-07-17T08:25:07.163Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第二个博客">
-<meta name="twitter:description" content="来自一个程序员的博客第一章百度一下  列表内容 列表内容1 列表内容2 列表内容3       姓名 技能 排行     刘备 哭 大哥   关于 打 二哥   张飞 骂 三哥      1234public void static main(String[] args)&amp;#123;	system.out.println(&amp;quot;这是我的第一个博客&amp;quot;);&amp;#125;alert(&amp;ap">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/04/29/E3rTfI.jpg">
+<meta name="twitter:title" content="多表联合查询批量插入">
+<meta name="twitter:description" content="当多张表A,B的数据需要汇总到一张表C的时候，并且数据量很大的时候，是一件很麻烦的事...">
 
 
 
@@ -125,7 +124,7 @@
 
   
   
-  <link rel="canonical" href="http://sunoat77.github.io/2019/04/28/我的第二个博客/">
+  <link rel="canonical" href="http://sunoat77.github.io/2020/07/17/多表联合查询批量插入/">
 
 
 
@@ -135,7 +134,7 @@
   };
 </script>
 
-  <title>我的第二个博客 | 程序猫</title>
+  <title>多表联合查询批量插入 | 程序猫</title>
   
 
 
@@ -276,6 +275,23 @@
         
         
           
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-schedule">
 
     
@@ -338,7 +354,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://sunoat77.github.io/2019/04/28/我的第二个博客/">
+    <link itemprop="mainEntityOfPage" href="http://sunoat77.github.io/2020/07/17/多表联合查询批量插入/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="codeCat">
@@ -355,7 +371,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">我的第二个博客
+          <h1 class="post-title" itemprop="name headline">多表联合查询批量插入
 
               
             
@@ -381,24 +397,12 @@
                 
               
 
-              <time title="创建时间：2019-04-28 21:51:17" itemprop="dateCreated datePublished" datetime="2019-04-28T21:51:17+08:00">2019-04-28</time>
+              <time title="创建时间：2020-07-17 15:39:19 / 修改时间：16:25:07" itemprop="dateCreated datePublished" datetime="2020-07-17T15:39:19+08:00">2020-07-17</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-29 20:33:05" itemprop="dateModified" datetime="2019-04-29T20:33:05+08:00">2019-04-29</time>
               
             
           </span>
@@ -426,7 +430,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">920</span>
+                <span title="本文字数">45</span>
               
 
               
@@ -460,68 +464,10 @@
       
 
       
-        <h1 id="来自一个程序员的博客"><a href="#来自一个程序员的博客" class="headerlink" title="来自一个程序员的博客"></a>来自一个程序员的博客</h1><h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p><a href="http://baidu.com" target="_blank" rel="noopener">百度一下</a></p>
-<ul>
-<li>列表内容</li>
-<li>列表内容1</li>
-<li>列表内容2</li>
-<li>列表内容3  </li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>姓名</th>
-<th>技能</th>
-<th>排行</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>刘备</td>
-<td>哭</td>
-<td>大哥</td>
-</tr>
-<tr>
-<td>关于</td>
-<td>打</td>
-<td>二哥</td>
-</tr>
-<tr>
-<td>张飞</td>
-<td>骂</td>
-<td>三哥  </td>
-</tr>
-</tbody>
-</table>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public void static main(String[] args)&#123;</span><br><span class="line">	system.out.println(&quot;这是我的第一个博客&quot;);</span><br><span class="line">&#125;</span><br><span class="line">alert(&apos;hello world&apos;);</span><br></pre></td></tr></table></figure>
-<hr>
-<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><pre><code>&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;table border=&quot;1&quot; ellspacing=&quot;0&quot; cellpadding=&quot;5&quot;&gt;
-    &lt;caption&gt;成绩单&lt;/caption&gt;
-    &lt;tr&gt;
-        &lt;td&gt;姓名&lt;/td&gt;
-        &lt;td&gt;性别&lt;/td&gt;
-        &lt;td&gt;成绩&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;张三&lt;/td&gt;
-        &lt;td&gt;男&lt;/td&gt;
-        &lt;td&gt;89&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;李四&lt;/td&gt;
-        &lt;td&gt;男&lt;/td&gt;
-        &lt;td&gt;88&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p><img src="https://s2.ax1x.com/2019/04/29/E3rTfI.jpg" alt="hello world"></p>
-
+        <p><code>当多张表A,B的数据需要汇总到一张表C的时候，并且数据量很大的时候，是一件很麻烦的事...</code><br><!--more>
+    首先通过外键将另外的两张表建立起关联，然后查询出C表中需要插入的字段，然后通过insert 将C表的字段表示出来。。
+    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">insert into ADS_THIRD_LEVEL_KPIS</span><br><span class="line">(ID,</span><br><span class="line">DATE_TIME,CITY_NAME,SCENE_ID_L1,SCENE_NAME_L1,SCENE_ID_L2,SCENE_NAME_L2,SCENE_ID_L3,SCENE_NAME_L3,VENDOR_ID,VENDOR_NAME,CELL_UK,CELL_NAME,TIMESTAMP,</span><br><span class="line">LATITUDE,LONGITUDE,BEARING,COVER_TYPE,IS_HIGH_LOAD,NG_SA_CELL_NUM,NG_NSA_CELL_NUM,L_ANCHOR_OBJECT_COVER,L_ANCHOR_OBJECT_TOTAL,L_ANCHOR_COVER_RATE,</span><br><span class="line">NG_MR_OBJECT_COVER,NG_MR_OBJECT_TOTAL,NG_MR_COVER_RATE,NG_PDCP_UPOCTULDL,NG_NSA_PDCP_UPOCTUL,NG_NSA_PDCP_UPOCTDL,NG_SA_PDCP_UPOCTUL,NG_SA_PDCP_UPOCTDL,</span><br><span class="line">NG_USER,NG_HIGH_LOAD,SCORE_ZHANDESHANG,SCORE_ZHULIUWEN,SCORE_TIYANYOU,NG_DC_NBRSUCCSNADD_RATE,NG_DC_NBRATTSNADD,NG_DC_NBRSUCCSNADD,NG_DC_NBREXCEPRELEASE_RATE,</span><br><span class="line">NG_DC_NBRREQSNRELBYSN,NG_DC_NBRREQSNRELBYSN_NORMAL,NG_DC_NBRREQSNRELBYMN,NG_HOWITHSNSUCCCONNRATE_NR,L_NSARESIDENCERATIO,NG_ALARM_OUT_SERVICE,</span><br><span class="line">NG_ALARM_REDUCE_QUALITY,NG_AVGDATARATEUL,NG_RLC_THRPTIMEUL,NG_RLC_UPLASTTTIOCTUL,NG_RLC_UPOCTUL,NG_AVGDATARATEDL,NG_RLC_THRPTIMEDL,NG_RLC_UPLASTTTIOCTDL,</span><br><span class="line">NG_RLC_UPOCTDL,NG_PDCPUPOCTUL,NG_PDCPUPOCTDL,L_RRC_CONNMEAN_DC,L_RRC_CONNMAX_DC,NG_PRBASSNRATEUL,NG_RRU_PUSCHPRBASSN,NG_RRU_PUSCHPRBTOT,NG_PRBASSNRATEDL,</span><br><span class="line">NG_RRU_PDSCHPRBASSN,NG_RRU_PDSCHPRBTOT,NG_HIGHLOAD_NUM,NG_ALARM_NUM,SCHEDULE_TOTAL,SCHEDULE_LOAD,SCHEDULE_COVER,SCHEDULE_EVENT,SCHEDULE_PROCESS,</span><br><span class="line">SCHEDULE_FILE,SCHEDULE_RESOLVE_RATE)</span><br><span class="line"></span><br><span class="line">select  seq_ADS_THIRD_LEVEL_KPIS.nextval,to_date(&apos;20200715&apos;,&apos;yyyyMMdd&apos;),sc.CITY_NAME,sd.SCENE_ID_L1,sd.SCENE_NAME_L1,sd.SCENE_ID_L2,sd.SCENE_NAME_L2,sd.SCENE_ID_L3,</span><br><span class="line">sd.SCENE_NAME_L3,sc.VENDOR_ID,sc.VENDOR_NAME,sc.cgi,sc.cell_name,sysdate,sc.LATITUDE,sc.LONGITUDE,sc.AZIMUTH,sc.STATION_TYPE, mod(abs(dbms_random.random()),2) as 高负荷小区,trunc(dbms_random.value(1,50)) as SA小区数 ,</span><br><span class="line">trunc(dbms_random.value(1,50)) as NSA小区数,trunc(dbms_random.value(200,500)) as LTE锚点覆盖采样点数,trunc(dbms_random.value(300,700)) as LTE锚点总采样点数,</span><br><span class="line">trunc(dbms_random.value(10,99),2) as LTE锚点覆盖率,trunc(dbms_random.value(50,500)) as 总覆盖采样点数,trunc(dbms_random.value(300,700)) as 总采样点数,</span><br><span class="line">trunc(dbms_random.value(10,79),2) as 覆盖率,trunc(dbms_random.value(50,1000))  as 流量,trunc(dbms_random.value(50,1000)) as NSA上行PDU字节数,</span><br><span class="line">trunc(dbms_random.value(50,1000)) as NSA小区用户面下行PDCPPDU字节数,trunc(dbms_random.value(50,1000)) as SA小区用户面上行PDCPPDU字节数,trunc(dbms_random.value(50,1000)) as SA小区用户面下行PDCPPDU字节数,</span><br><span class="line">trunc(dbms_random.value(50,1000)) as 五G用户数,trunc(dbms_random.value(50,1000)) as 五G高负荷个数,trunc(dbms_random.value(10,100)) as 占得上得分,trunc(dbms_random.value(10,100)) as 驻留稳得分,</span><br><span class="line">trunc(dbms_random.value(10,100)) as 体验优得分,trunc(dbms_random.value(10,100),2)  as SN添加成功率, trunc(dbms_random.value(50,1000)) as SN添加请求数,trunc(dbms_random.value(50,1000)) as SN添加成功数,</span><br><span class="line">trunc(dbms_random.value(10,100),2) as SN异常释放率,trunc(dbms_random.value(50,1000)) as SN触发的SN释放请求数,trunc(dbms_random.value(50,1000)) as SN触发的SN正常释放请求数,</span><br><span class="line">trunc(dbms_random.value(50,1000)) as MN请求SN释放数,trunc(dbms_random.value(10,100),2) as SN切换成功率,trunc(dbms_random.value(10,100),2) as NSA5G驻留比,trunc(dbms_random.value(50,1000))as 退服类告警,</span><br><span class="line">trunc(dbms_random.value(50,1000)) as 降质类告警,trunc(dbms_random.value(10,100),2) as 上行用户平均速率,trunc(dbms_random.value(1,10)) as 小区RLC层接收上行总时长 ,</span><br><span class="line">trunc(dbms_random.value(50,1000)) as 小区用户面RLCSDU上行尾包字节数,</span><br><span class="line">trunc(dbms_random.value(50,1000)) as 小区上行RLCSDU接收字节数,trunc(dbms_random.value(10,100),2) as 下行用户平均速率,trunc(dbms_random.value(1,10)) as 小区RLC层发送下行总时长 ,</span><br><span class="line">trunc(dbms_random.value(50,1000)) as 小区用户面RLCSDU下行尾包字节数,trunc(dbms_random.value(50,1000)) as 小区下行RLCSDU发送字节数,trunc(dbms_random.value(100,1000)) as 上行流量,</span><br><span class="line">trunc(dbms_random.value(100,1000)) as 下行流量,trunc(dbms_random.value(50,1000)) as 处于双连接的RRC连接平均数,trunc(dbms_random.value(50,1000)) as 处于双连接的RRC连接最大数,</span><br><span class="line">trunc(dbms_random.value(10,100),2) as 上行PRB平均利用率,trunc(dbms_random.value(50,1000)) as 上行PUSCHPRB占用数,trunc(dbms_random.value(50,1000)) as 上行PUSCHPRB可用数,</span><br><span class="line">trunc(dbms_random.value(10,100),2) as 下行PRB平均利用率,trunc(dbms_random.value(50,1000))as 下行PDSCHPRB占用数,trunc(dbms_random.value(50,1000)) as 下行PDSCHPRB可用数,</span><br><span class="line">trunc(dbms_random.value(5,100)) as 高负荷小区数量,trunc(dbms_random.value(5,100))  as 告警数量,trunc(dbms_random.value(5,200)) as 总派单个数,trunc(dbms_random.value(5,200)) </span><br><span class="line">as 负荷类_派单个数,trunc(dbms_random.value(5,200)) as 覆盖类_派单个数,trunc(dbms_random.value(5,200)) as 事件类_派单个数,trunc(dbms_random.value(5,200)) as 正在处理_派单个数,</span><br><span class="line">trunc(dbms_random.value(5,200)) as 已归档_派单个数,trunc(dbms_random.value(10,100),2) as 解决率</span><br><span class="line">from ADS_SCENE_CELL_DIC sc,ADS_SECOND_DIC sd</span><br><span class="line">where sc.SCENE_ID_L3=sd.SCENE_ID_L3</span><br></pre></td></tr></table></figure></p>
+--></p>
       
     </div>
 
@@ -560,7 +506,7 @@
         
       
       <div style="display: inline-block">
-        <img src="https://s2.ax1x.com/2019/04/29/E35imn.jpg" alt="codeCat 支付宝">
+        <img src="https://s2.ax1x.com/2019/05/18/EO1Kt1.png" alt="codeCat 支付宝">
         <p>支付宝</p>
       </div>
     
@@ -575,6 +521,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Oracle/" rel="tag"># Oracle</a>
+          
+        </div>
+      
 
       
       
@@ -584,8 +536,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/28/博客名字/" rel="next" title="博客名字">
-                <i class="fa fa-chevron-left"></i> 博客名字
+              <a href="/2019/05/18/Spring基本应用/" rel="next" title="Spring基本应用">
+                <i class="fa fa-chevron-left"></i> Spring基本应用
               </a>
             
           </div>
@@ -636,17 +588,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -661,9 +604,9 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives">
+                  <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -671,6 +614,31 @@
 
               
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -731,6 +699,9 @@
                 
               </ul>
             </div>
+            
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1313052971&auto=1&height=66"></iframe>
+
           
 
           
@@ -742,28 +713,11 @@
       </div>
 
       
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#来自一个程序员的博客"><span class="nav-number">1.</span> <span class="nav-text">来自一个程序员的博客</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章"><span class="nav-number">1.1.</span> <span class="nav-text">第一章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章"><span class="nav-number">1.2.</span> <span class="nav-text">第二章</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
-      
 
       
 
     </div>
-  </aside>
+  </aside>  
   
 
 
@@ -773,7 +727,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -785,7 +739,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">17k</span>
   
 
   
@@ -794,7 +748,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">15 分钟</span>
   
 </div>
 
